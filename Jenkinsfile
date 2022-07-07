@@ -1,9 +1,6 @@
 node("docker"){
-    stage(){
+    stage("Test"){
         sh "ls"
 
-    }
-    stage(""){
-        docker build
     }
 }

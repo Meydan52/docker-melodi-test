@@ -8,7 +8,7 @@ node("docker"){
         stage("Push"){
             sh '''
                 docker login -u $DH_USERNAME -p $DH_PASSWORD
-                docker Push $DH_USERNAME/melodi:latest
+                docker push $DH_USERNAME/melodi:latest
             '''
         }   
     }   

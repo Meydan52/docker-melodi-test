@@ -15,9 +15,9 @@ node("docker"){
             sh '''
                 docker login -u $DH_USERNAME -p $DH_PASSWORD
             '''
-            sh '''
-                docker push $DH_USERNAME/melodi:$tag
-            '''
+            sh "docker push $DH_USERNAME/melodi:${tag}"
+                
+            
         }   
     }   
     

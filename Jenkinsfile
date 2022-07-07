@@ -16,7 +16,7 @@ node("docker"){
                 docker login -u $DH_USERNAME -p $DH_PASSWORD
             '''
             sh '''
-                docker push $DH_USERNAME/melodi:${tag}
+                docker push $DH_USERNAME/melodi:$tag
             '''
         }   
     }   
